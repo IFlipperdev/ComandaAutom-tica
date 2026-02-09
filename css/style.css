@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Playwrite+CU+Guides&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: white url(../img/backgroundbody.jpg) no-repeat center center
+}
+header{
+    background-color: rgba(0, 0, 0, 0.836);
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.979);
+
+}
+header > h1,p{
+    color: white;
+    text-align: center;
+}
+main{
+    font-family: arial;
+    margin: 5px auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    max-width: 800px;
+    height: 900px;
+    box-shadow: 3px 3px 5px black;
+    overflow: auto;
+}
+main > h2{
+    padding: 15px;
+    text-align: center;
+    font-family: "Gravitas One", serif;
+}
+section{
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+}
+label{
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    padding: 7px;
+}
+input{
+
+    flex: 1;           /* ocupa o resto do espaço */
+    padding: 7px;
+}
+textarea{
+  margin: auto;
+  width: 90%;
+  max-width: 500px;
+  min-height: 80px;
+  padding: 10px;
+  resize: vertical;        /* usuário pode aumentar altura */
+  font-family: Arial;
+}
+
+footer{
+    margin: 15px;
+}
+.campo {
+  display: flex;
+  align-items: center; /* ALINHAMENTO VERTICAL */
+  gap: 10px;
+  word-wrap: break-word;
+}
+@media (max-width: 600px) {
+  .campo {
+    flex-direction: column;   /* EMPILHA */
+    align-items: stretch;     /* ocupa largura toda */
+  }
+  label {
+    width: 100%;              /* label ocupa tudo */
+  }
+}
+@media (max-width: 600px) {
+  th, td {
+    padding: 3px;
+  }
+  table{
+    font-size: clamp(11px, 2.5vw, 14px);
+  }
+}
+option{
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+    word-break: break-word;;
+}
+th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    max-width: 50px;
+    word-break: break-word;;
+}
+table{
+    margin: auto;
+    width: 100%;
+    table-layout: fixed;
+    font-size: clamp(11px, 2.5vw, 14px);
+    
+}
+section.produtos{
+    max-width: 600px;
+    overflow: hidden;
+}
+td.maior, th.maior{
+    max-width: 200px;
+}
+section.valor_total{
+    padding: 5px;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    max-width: 150px;
+    margin: 10px;
+    float: right;
+    
+}
+section.valor_total > p{
+    margin: 0px;
+    padding: 5px;
+    color: black;
+    display: inline-block;
+}
+section.valor_total > div{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
