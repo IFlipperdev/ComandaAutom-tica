@@ -25,7 +25,6 @@ main{
     border-radius: 15px;
     background-color: white;
     max-width: 800px;
-    height: 900px;
     box-shadow: 3px 3px 5px black;
     overflow: auto;
 }
@@ -135,4 +134,5 @@ section.valor_total > div{
     display: inline-block;
     margin: 0px;
     padding: 0px;
+
 }
